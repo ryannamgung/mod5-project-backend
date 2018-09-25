@@ -5,3 +5,14 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+User.create(name: "John", password: "sadbjnasc")
+User.create(name: "Jane", password: "joibdfjfx")
+Company.create(name: "Brian and Ryan", password: "jhonson", motto: "our customers are never upset")
+Company.create(name: "the corp", password: "confusion", motto: "you'll never see us coming")
+
+Item.create(name: "black hat", image_src: "https://images-na.ssl-images-amazon.com/images/I/711c4BhJ7PL._SL1500_.jpg", good_type: "hat", price: 30, stock: true, company_id: 1)
+
+Item.create(name: "shoes", image_src: "https://sneakernews.com/wp-content/uploads/2017/07/dwyane-wade-li-ning-way-of-wade-6-unveiled-01.jpg?w=540&h=380&crop=1", good_type: "shoes", price: 100, stock: true, company_id: 2)
+
+Review.create(user_id: 1, item_id: 1, comment: "A very good hat!", rating: 3)
+Review.create(user_id: 2, item_id: 2, comment: "Dwayne Wade's shoes are better than Micheal Jordan's", rating: 5)

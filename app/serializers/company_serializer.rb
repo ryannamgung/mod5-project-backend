@@ -1,3 +1,3 @@
 class CompanySerializer < ActiveModel::Serializer
-  attributes :id, :name, :rating
+  attributes :id, :name, :motto
 end
