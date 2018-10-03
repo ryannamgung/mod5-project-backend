@@ -32,7 +32,7 @@ class Api::V1::CompaniesController < ApplicationController
   private
 
   def company_params
-    params.permit(:name, :password, :motto)
+    params.permit(:name, :password, :motto, :company_url)
   end
 
   def set_company
